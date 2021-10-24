@@ -6,70 +6,70 @@
 </head>
 <style>
 
-
-
-    .White{
-        height: 34px;
+        .White{
+        height: 50px;
         width: 100px;
         position: relative;
         background-color: white;
     }
 
-    .Red{
-        height: 34px;
+        .Red{
+        height: 50px;
         width: 100px;
         position: relative;
         background-color: red;
     }
 
-    .White{
-        height: 17px;
-        width: 50px;
+        .White2{
+        height: 20px;
+        width: 40px;
         position: relative;
         background-color: white;
     }
-        .Red{
-        height: 17px;
-        width: 50px;
+        .Red2{
+        height: 20px;
+        width: 40px;
         position: relative;
         background-color: red;
     }
         .Kształt {
         width: 100px;
         height: 100px;
-        position:  relative;
         background-color: white;
-        border: 50px white;
+        border: 5px solid black;
         border-radius: 100%;
         overflow: hidden;
+        z-index: 3;
 
 
     }
         .Kształt2{
-        width: 50px;
-        height: 50px;
-        position:  relative;
+         /* fixed -> Element jest usuwany z normalnego przepływu dokumentów i nie jest tworzone dla niego miejsce w układzie strony.*/
+        position: fixed;
+        width: 40px;
+        height: 40px;
         background-color: white;
-        border: 25px white;
-        border-radius: 50%;
+        border-radius: 100%;
         overflow: hidden;
+        margin-left: 10px;
+        margin-top: 30px;
+        z-index: 5;
+
         }
     
 
 
 </style>
 <body>
-<div class="Kształt">
-    <div class="White">
-    </div>
-    <div class="Red">
-    </div>
-    <div class="Kształt2">
-    <div class="White">
-    </div>
-    <div class="Red">
-    </div>
+    <div class= "Kształt">
+        <div class= "Kształt2">
+            <div class="Red2"></div>
+            <div class="White2"></div>
+        </div>
+        <div class="White"></div>
+        <div class="Red"></div>
 </div>
+    
 
 
 
